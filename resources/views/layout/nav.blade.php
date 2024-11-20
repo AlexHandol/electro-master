@@ -5,7 +5,8 @@
         <div id="responsive-nav">
             <!-- NAV -->
             <ul class="main-nav nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li class="{{ Route::is('dashboard') ? 'active' : '' }}"><a href="{{ route('dashboard') }}">Home</a></li>
+                <li class="{{ Route::is('shop') ? 'active' : '' }}"><a href="{{ route('shop') }}">Shop</a></li>
                 <li><a href="#">Hot Deals</a></li>
                 <li><a href="#">Categories</a></li>
                 <li><a href="#">Laptops</a></li>

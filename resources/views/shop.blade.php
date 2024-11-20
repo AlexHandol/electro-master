@@ -61,4 +61,5 @@
         <!-- /container -->
     </div> --}}
     <!-- /NEWSLETTER -->
+    @include('layout.footer')
 @endsection

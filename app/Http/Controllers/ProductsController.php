@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class ProductsController extends Controller
@@ -9,9 +10,22 @@ class ProductsController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Product $products)
     {
-        return view('shop');
+        $products = Product::with('productsCategories')->orderBy('created_at', 'DESC');
+
+        // if (request()->has('search')) {
+        //     $searchTerm = request()->get('search', '');
+
+        //     $accounts = $accounts->where(function ($query) use ($searchTerm) {
+        //         $query->where('full_name', 'like', '%' . $searchTerm . '%')
+        //             ->orWhere('gps_id', 'like', '%' . $searchTerm . '%');
+        //     });
+        // }
+
+        return view('shop', [
+            'myProducts' => $products->paginate(10)
+        ]);
     }
 
     /**
@@ -33,9 +47,9 @@ class ProductsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Product $product)
     {
-        //
+        return view('products.view.show', compact('product'));
     }
 
     /**
