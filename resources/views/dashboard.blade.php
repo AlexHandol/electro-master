@@ -14,7 +14,6 @@
     <!-- /HOT DEAL SECTION -->
 
     <!-- TOP SELLING SECTION -->
-    @include('includes.dashboard.top-selling')
     <!-- /TOP SELLING SECTION -->
 
     <!-- SECTION -->
