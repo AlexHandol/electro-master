@@ -17,6 +17,7 @@ class Product extends Model
         'quantity',
         'price',
         'is_active',
+        'is_hot_deal',
         'category_id'
     ];
 

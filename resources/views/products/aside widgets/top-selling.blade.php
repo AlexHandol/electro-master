@@ -3,7 +3,7 @@
     <h3 class="aside-title">Top selling</h3>
     <div class="product-widget">
         <div class="product-img">
-            <img src="./img/product01.png" alt="">
+            <img src="/../img/product01.png" alt="">
         </div>
         <div class="product-body">
             <p class="product-category">Category</p>
@@ -14,7 +14,7 @@
 
     <div class="product-widget">
         <div class="product-img">
-            <img src="./img/product02.png" alt="">
+            <img src="/../img/product02.png" alt="">
         </div>
         <div class="product-body">
             <p class="product-category">Category</p>
@@ -25,7 +25,7 @@
 
     <div class="product-widget">
         <div class="product-img">
-            <img src="./img/product03.png" alt="">
+            <img src="/../img/product03.png" alt="">
         </div>
         <div class="product-body">
             <p class="product-category">Category</p>

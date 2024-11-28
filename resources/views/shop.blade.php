@@ -9,7 +9,9 @@
             <div class="row">
                 <!-- ASIDE -->
                 <div id="aside" class="col-md-3">
-                    @include('products.aside widgets.categories')
+                    @if (request()->is('shop') || Route::currentRouteName() === 'shop')
+                        @include('products.aside widgets.categories')
+                    @endif
                     @include('products.aside widgets.price')
                     @include('products.aside widgets.brand')
                     @include('products.aside widgets.top-selling')

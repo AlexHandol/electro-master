@@ -17,4 +17,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 Route::get('/shop', [ProductsController::class, 'index'])->name('shop');
+Route::get('/shop/hot-deals', [ProductsController::class, 'hotDeals'])->name('shop.hot-deals');
+Route::get('/shop/PCs', [ProductsController::class, 'PCs'])->name('shop.PCs');
+Route::get('/shop/laptops', [ProductsController::class, 'laptops'])->name('shop.laptops');
+Route::get('/shop/smartphones', [ProductsController::class, 'smartPhones'])->name('shop.smartphones');
 Route::get('/products/view/{product}', [ProductsController::class, 'show'])->name('products.view.show');

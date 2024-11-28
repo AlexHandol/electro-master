@@ -384,7 +384,7 @@
                 <div class="col-md-3 col-xs-6">
                     <div class="product">
                         <div class="product-img">
-                            <img src="./img/product01.png" alt="">
+                            <img src="/../img/product01.png" alt="">
                             <div class="product-label">
                                 <span class="sale">-30%</span>
                             </div>
@@ -415,7 +415,7 @@
                 <div class="col-md-3 col-xs-6">
                     <div class="product">
                         <div class="product-img">
-                            <img src="./img/product02.png" alt="">
+                            <img src="/../img/product02.png" alt="">
                             <div class="product-label">
                                 <span class="new">NEW</span>
                             </div>
@@ -453,7 +453,7 @@
                 <div class="col-md-3 col-xs-6">
                     <div class="product">
                         <div class="product-img">
-                            <img src="./img/product03.png" alt="">
+                            <img src="/../img/product03.png" alt="">
                         </div>
                         <div class="product-body">
                             <p class="product-category">Category</p>
@@ -486,7 +486,7 @@
                 <div class="col-md-3 col-xs-6">
                     <div class="product">
                         <div class="product-img">
-                            <img src="./img/product04.png" alt="">
+                            <img src="/../img/product04.png" alt="">
                         </div>
                         <div class="product-body">
                             <p class="product-category">Category</p>
